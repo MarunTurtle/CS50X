@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell Shares
+{% endblock %}
+
+{% block main %}
+    <div class="container mt-5">
+        <!-- Page Header -->
+        <h1 class="mb-4">Sell Shares</h1>
+        
+        <!-- Form to sell shares -->
+        <form action="{{ url_for('sell') }}" method="post">
+            
+            <!-- Dropdown to select stock symbol -->
+            <div class="mb-3">
+                <label for="symbol" class="form-label">Symbol</label>
+                <select class="form-control mx-auto w-auto" id="symbol" name="symbol" required>
+                    <option value="">Select a stock</option>
+                    {% for stock in stocks %}
+                    <option value="{{ stock.symbol }}">{{ stock.symbol }} ({{ stock.total_shares }} shares)</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <!-- Input to enter number of shares to sell -->
+            <div class="mb-3">
+                <label for="shares" class="form-label">Shares</label>
+                <input type="number" name="shares" id="shares" class="form-control mx-auto w-auto" placeholder="Enter number of shares" required min="1">
+            </div>
+            
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Sell</button>
+        </form>
+    </div>
+{% endblock %}
