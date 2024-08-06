@@ -1,2 +1,2 @@
 # CS50X
-Code Records for CS50X Introduction to Computer Science
+Solutions for CS50X(Introduction to Computer Science) problem sets.
