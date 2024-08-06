@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <!-- Main section for displaying the portfolio -->
+    <h2>Portfolio</h2>
+    <table class="table table-bordered table-striped">
+        <!-- Table header for stock details -->
+        <thead class="thead-light">
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through each stock and display its details -->
+            {% for stock in stocks %}
+            <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.total_shares }}</td>
+                <td>{{ stock.price|usd }}</td>
+                <td>{{ (stock.price * stock.total_shares)|usd }}</td>
+            </tr>
+            {% endfor %}
+            <!-- Display cash balance -->
+            <tr>
+                <td colspan="3" align="center">Cash</td>
+                <td>{{ cash|usd }}</td>
+            </tr>
+            <!-- Display total portfolio value -->
+            <tr>
+                <td colspan="3" align="center">Total Value</td>
+                <td>{{ total_value|usd }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,5 +1,0 @@
-requests
-openai
-beautifulsoup4
-fake-useragent
-notion

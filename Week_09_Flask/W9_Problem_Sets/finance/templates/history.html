@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Transaction History
+{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+    <!-- Page Header -->
+    <h2 class="mb-4">Transaction History</h2>
+    
+    <!-- Transaction Table -->
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Transaction Type</th>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through each transaction and display its details -->
+            {% for transaction in transactions %}
+            <tr>
+                <!-- Determine if the transaction is a Buy or Sell based on shares -->
+                <td>{{ 'Buy' if transaction.shares > 0 else 'Sell' }}</td>
+                <td>{{ transaction.symbol }}</td>
+                <td>{{ transaction.shares }}</td>
+                <!-- Format price as USD -->
+                <td>{{ transaction.price | usd }}</td>
+                <!-- Calculate and format total as USD -->
+                <td>{{ (transaction.shares * transaction.price) | usd }}</td>
+                <td>{{ transaction.timestamp }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

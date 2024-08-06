@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Importing Google Fonts and external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to handle multiple choice button clicks
+            function handleMultipleChoiceClick(event) {
+                const clickedButton = event.target;
+                const correctButton = document.getElementById("option1"); // Update to correct option ID
+
+                // Display feedback based on the clicked button
+                if (clickedButton === correctButton) {
+                    clickedButton.style.backgroundColor = "green";
+                    document.getElementById("mc-feedback").innerText = "Correct!";
+                } else {
+                    clickedButton.style.backgroundColor = "red";
+                    document.getElementById("mc-feedback").innerText = "Incorrect";
+                }
+            }
+
+            // Add event listeners to multiple choice buttons
+            const mcButtons = document.querySelectorAll(".mc-button");
+            mcButtons.forEach(button => {
+                button.addEventListener("click", handleMultipleChoiceClick);
+            });
+
+            // Function to handle free response confirmation
+            document.getElementById("confirm-response").addEventListener("click", function() {
+                const userInput = document.getElementById("free-response").value.toLowerCase().trim();
+                const correctAnswer = "tokyo"; // Update to the correct answer
+                const frFeedback = document.getElementById("fr-feedback");
+
+                // Display feedback based on the user's input
+                if (userInput === correctAnswer) {
+                    document.getElementById("free-response").style.backgroundColor = "green";
+                    frFeedback.innerText = "Correct!";
+                } else {
+                    document.getElementById("free-response").style.backgroundColor = "red";
+                    frFeedback.innerText = "Incorrect";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Header section -->
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Multiple Choice Section -->
+        <div class="section">
+            <h2>Part 1: Multiple Choice</h2>
+            <hr>
+            <h3>What is the capital of France?</h3>
+            <button id="option1" class="mc-button">Paris</button>
+            <button id="option2" class="mc-button">Berlin</button>
+            <button id="option3" class="mc-button">Rome</button>
+            <div id="mc-feedback"></div>
+        </div>
+
+        <!-- Free Response Section -->
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <h3>What is the capital of Japan?</h3>
+            <input type="text" id="free-response">
+            <button id="confirm-response">Confirm</button>
+            <div id="fr-feedback"></div>
+        </div>
+    </div>
+</body>
+</html>
