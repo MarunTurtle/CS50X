@@ -1,6 +1,6 @@
 # Songs - CS50x 2024
 
-[CS50 Songs Problem Set](https://cs50.harvard.edu/x/2024/psets/7/songs/).
+[CS50 Songs Problem Set](https://cs50.harvard.edu/x/2024/psets/7/songs/)
 
 ## Overview
 

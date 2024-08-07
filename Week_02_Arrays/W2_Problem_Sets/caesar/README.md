@@ -1,6 +1,6 @@
 # Caesar - CS50x 2024
 
-[Problem Set Description](https://cs50.harvard.edu/x/2024/psets/2/caesar/)
+[CS50 Caesar Problem Set](https://cs50.harvard.edu/x/2024/psets/2/caesar/)
 
 ## Overview
 

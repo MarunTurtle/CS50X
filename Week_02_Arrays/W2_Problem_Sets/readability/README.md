@@ -1,6 +1,6 @@
 # Readability - CS50x 2024
 
-[CS50 Readability Problem Set](https://cs50.harvard.edu/x/2024/psets/6/readability/).
+[CS50 Readability Problem Set](https://cs50.harvard.edu/x/2024/psets/6/readability/)
 
 ## Overview
 
