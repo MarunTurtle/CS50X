@@ -1,6 +1,6 @@
 # Credit - CS50x 2024
 
-[CS50 Credit Problem Set](https://cs50.harvard.edu/x/2024/psets/6/credit/).
+[CS50 Credit Problem Set](https://cs50.harvard.edu/x/2024/psets/6/credit/)
 
 ## Overview
 
