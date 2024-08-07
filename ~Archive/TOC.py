@@ -1,8 +1,17 @@
 import os
 from openai import OpenAI
 
+def get_api_key(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        return f.read().strip()
+
+# Get the API key from the key.txt file
+script_dir = os.path.dirname(os.path.abspath(__file__))
+key_file_path = os.path.join(script_dir, 'key.txt')
+api_key = get_api_key(key_file_path)
+
 # Initialize OpenAI client with the provided API key
-client = OpenAI(api_key="")
+client = OpenAI(api_key=api_key)
 
 def summarize_readme(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
