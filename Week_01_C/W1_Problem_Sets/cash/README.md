@@ -1,6 +1,6 @@
 # Cash - CS50x 2024
 
-[CS50 Cash Problem Set](https://cs50.harvard.edu/x/2024/psets/6/cash/).
+[CS50 Cash Problem Set](https://cs50.harvard.edu/x/2024/psets/6/cash/)
 
 ## Overview
 
