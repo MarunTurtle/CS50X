@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 
 # Initialize OpenAI client with the provided API key
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 def summarize_readme(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
