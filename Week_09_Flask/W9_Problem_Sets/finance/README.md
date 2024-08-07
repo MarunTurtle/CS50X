@@ -1,36 +1,38 @@
 # C$50 Finance
 
+[CS50 Finance Problem Set](https://cs50.harvard.edu/x/2024/psets/9/finance/)
+
 ## Project Overview
 
-C$50 Finance is a web application that allows users to manage their stock portfolio and record transactions. Built using the Flask framework, the application provides a user-friendly interface for stock trading and portfolio management.
+C$50 Finance is a web application designed to help users manage their stock portfolios and record transactions. Built using the Flask framework, the application offers a user-friendly interface for stock trading and portfolio management.
 
 ## Project Features
 
-- **User Authentication:** Users can register, log in, and change their passwords securely.
-- **Portfolio Management:** Users can view their stock holdings and portfolio value.
-- **Stock Trading:** Users can buy and sell stocks.
-- **Stock Quotes:** Users can get the current stock prices.
-- **Transaction History:** Users can view their transaction history.
+- **User Authentication:** Secure registration, login, and password change functionalities.
+- **Portfolio Management:** View stock holdings and portfolio value.
+- **Stock Trading:** Buy and sell stocks.
+- **Stock Quotes:** Retrieve current stock prices.
+- **Transaction History:** View transaction history.
 
 ## Project Files
 
-- **app.py:** Main script that runs the Flask application, handles routing, and implements core functionality.
-- **templates:** Directory containing HTML templates for different pages.
-  - **buy.html:** Page for buying stocks.
-  - **history.html:** Page for viewing transaction history.
-  - **index.html:** Portfolio dashboard page.
-  - **layout.html:** Base layout template.
-  - **change_password.html:** Page for changing the password.
-  - **login.html:** Login page.
-  - **register.html:** Registration page.
-  - **sell.html:** Page for selling stocks.
-  - **quote.html:** Page for getting stock quotes.
+- **`app.py`:** Main script that runs the Flask application, handles routing, and implements core functionality.
+- **`templates/`:** Directory containing HTML templates for different pages.
+  - **`buy.html`:** Page for buying stocks.
+  - **`history.html`:** Page for viewing transaction history.
+  - **`index.html`:** Portfolio dashboard page.
+  - **`layout.html`:** Base layout template.
+  - **`change_password.html`:** Page for changing the password.
+  - **`login.html`:** Login page.
+  - **`register.html`:** Registration page.
+  - **`sell.html`:** Page for selling stocks.
+  - **`quote.html`:** Page for getting stock quotes.
 
 ## Detailed Description
 
 ### Flask Setup
 
-The application is built using the Flask framework. The main routing and functionality are implemented in `app.py`, and HTML templates are used to render different pages.
+The application is built using the Flask framework. The main routing and functionality are implemented in `app.py`, while HTML templates are used to render different pages.
 
 ### Template Inheritance
 
@@ -60,11 +62,6 @@ Users can register on the `register.html` page, log in on the `login.html` page,
 
 ## Future Improvements
 
-- **Enhanced User Interface:** Improve the UI for better user experience and implement responsive design.
+- **Enhanced User Interface:** Improve the UI for a better user experience and implement responsive design.
 - **Additional Features:** Add stock alert settings, portfolio analysis tools, etc.
 - **Security Enhancements:** Strengthen security measures to protect user data.
-
-## References
-
-- This project was developed based on the teachings from CS50's web programming course.
-For detailed instructions, visit the [CS50 Finance Problem Set](https://cs50.harvard.edu/x/2024/psets/9/finance/).

@@ -1,5 +1,6 @@
 # Birthdays - CS50x 2024
-[link](https://cs50.harvard.edu/x/2024/psets/9/birthdays/)
+
+[CS50 Birthdays Problem Set](https://cs50.harvard.edu/x/2024/psets/9/birthdays/)
 
 ## Overview
 Create a web application using Python and SQLite to manage a list of birthdays. Implement functionality to add, view, and delete entries.
@@ -13,5 +14,3 @@ Create a web application using Python and SQLite to manage a list of birthdays. 
 1. **Set Up**: Download the distribution code.
 2. **Implement Routes**: Complete routes in `app.py` to handle form submissions and database interactions.
 3. **Design Interface**: Use HTML templates to display and manage birthdays.
-
-For detailed instructions, visit the [CS50 Birthdays Problem Set](https://cs50.harvard.edu/x/2024/psets/9/birthdays/).

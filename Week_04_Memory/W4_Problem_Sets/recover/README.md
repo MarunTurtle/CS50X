@@ -1,8 +1,9 @@
 # Recover - CS50x 2024
-[link](https://cs50.harvard.edu/x/2024/psets/4/recover/)
+
+[CS50 Recover Problem Set](https://cs50.harvard.edu/x/2024/psets/4/recover/)
 
 ## Overview
-This problem set involves creating a program in C to recover JPEG images from a forensic image of a memory card. The program will scan the memory card for JPEG signatures and extract the images.
+In this problem set, you will create a program in C to recover JPEG images from a forensic image of a memory card. The program will scan the memory card for JPEG signatures and extract the images.
 
 ## Objectives
 - Implement a program to recover JPEGs from a memory card image.
@@ -10,6 +11,7 @@ This problem set involves creating a program in C to recover JPEG images from a 
 - Ensure proper memory management.
 
 ## Instructions
+
 1. **Download Code**: Download and unzip the distribution code.
 2. **Open Memory Card**: Open the provided `card.raw` file.
 3. **Scan for JPEGs**: Implement logic to detect JPEG signatures and recover images.
@@ -18,3 +20,4 @@ This problem set involves creating a program in C to recover JPEG images from a 
 ## Example
 ```sh
 $ ./recover card.raw
+```

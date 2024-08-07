@@ -1,25 +1,18 @@
 # Credit - CS50x 2024
 
+[CS50 Credit Problem Set](https://cs50.harvard.edu/x/2024/psets/6/credit/).
+
 ## Overview
-This problem set involves creating a program in C to validate credit card numbers using Luhn's Algorithm and identify the card type (American Express, MasterCard, or Visa).
+
+Create a program in Python to validate credit card numbers using Luhn's Algorithm and determine the card type (AMEX, MasterCard, or Visa).
 
 ## Objectives
-- Implement Luhn's Algorithm to check the validity of a credit card number.
+
+- Implement Luhn's Algorithm for credit card validation.
 - Identify the card type based on number patterns.
 
 ## Instructions
+
 1. **Prompt User**: Request the credit card number.
-2. **Apply Luhn's Algorithm**: Validate the card number.
-3. **Identify Card Type**: Determine if it's AMEX, MasterCard, Visa, or INVALID.
-4. **Output Result**: Display the card type.
-
-## Steps
-1. Write pseudocode.
-2. Implement the algorithm in `credit.c`.
-3. Test the program with various inputs.
-
-## Example
-```sh
-$ ./credit
-Number: 4003600000000014
-VISA
+2. **Validate Card**: Apply Luhn's Algorithm.
+3. **Determine Card Type**: Identify the card type or mark it as invalid.

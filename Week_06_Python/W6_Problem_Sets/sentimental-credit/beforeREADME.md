@@ -13,4 +13,4 @@ Create a program in Python to validate credit card numbers using Luhn's Algorith
 2. **Validate Card**: Apply Luhn's Algorithm.
 3. **Determine Card Type**: Identify the card type or invalid.
 
-For detailed instructions, visit the [CS50 Credit Problem Set](https://cs50.harvard.edu/x/2024/psets/6/credit/).
+For detailed instructions, visit the 
